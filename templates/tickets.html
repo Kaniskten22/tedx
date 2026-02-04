@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="fade-in">
+
+<div class="card slide-up">
+    <h2>🎟 TEDx Ticket Booking</h2>
+    <p class="price">₹2000 per Ticket</p>
+
+    <form action="/book" method="post" id="ticketForm">
+
+        <div id="attendees">
+            <div class="attendee">
+                <input type="text" name="name[]" placeholder="Name (Required)" required>
+                <input type="tel" name="phone[]" placeholder="Phone (Required)" required>
+                <input type="email" name="email[]" placeholder="Email (Required)" required>
+            </div>
+        </div>
+
+        <input type="text" name="school" placeholder="School Name" required>
+
+        <label>Number of Tickets</label>
+        <input type="number" id="qty" min="1" value="1" required>
+
+        <h3>Total Amount: ₹<span id="total">2000</span></h3>
+
+        <button class="btn">Book & Download Ticket</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

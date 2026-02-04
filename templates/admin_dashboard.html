@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="fade-in">
+
+<div class="card" style="width:90%">
+    <h2>📊 Admin Dashboard</h2>
+
+    <p><b>Total Tickets Sold:</b> {{ total_tickets }}</p>
+    <p><b>Total Revenue:</b> ₹{{ total_amount }}</p>
+
+    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <th>Ticket ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>School</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/logout"><button class="btn">Logout</button></a>
+</div>
+
+</body>
+</html>
