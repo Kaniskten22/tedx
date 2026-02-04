@@ -2,7 +2,7 @@ const qtyInput = document.getElementById("qty");
 const totalText = document.getElementById("total");
 const attendees = document.getElementById("attendees");
 
-const PRICE = 2000;
+const PRICE = 1000;
 
 qtyInput.addEventListener("input", () => {
     let qty = parseInt(qtyInput.value);
