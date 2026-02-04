@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+    color: white;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h1 span {
+    color: red;
+}
+
+.tagline {
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    width: 350px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+.card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.price {
+    color: red;
+    text-align: center;
+}
+
+.ticket-id {
+    color: red;
+    margin-top: 20px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fade 1.2s ease;
+}
+
+.slide-up {
+    animation: slide 1s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
