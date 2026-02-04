@@ -4,7 +4,7 @@ import sqlite3, uuid
 app = Flask(__name__)
 app.secret_key = "tedx_secret"
 
-PRICE = 2000
+PRICE = 1000
 ADMIN_USER = "admin"
 ADMIN_PASS = "tedx123"
 
